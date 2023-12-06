@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <title>person form</title>
+</head>
+
+<body style="background-color: teal;">
+    <form method="post" action="">
+        <br>
+        <fieldset style="background-color:black ;">
+            <legend style="background-color: aliceblue;">Personal Data</legend>
+            <br>
+            <fieldset style="background-color: rgb(7, 88, 78);">
+                <legend style="background-color:rgb(149, 106, 54); color: aliceblue;">Your name </legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="name" style="color: white;">First Name :</label>
+                        </td>
+                        <td>
+                            <input type="text" name="FName" id="name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="name2" style="color: white;">Second Name :</label>
+                        </td>
+                        <td>
+                            <input type="text" name="SName" id="name2" required>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <table>
+                <tr>
+                    <td>
+                        <label for="ph" style="color: aliceblue;">Your phone :</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="phone .." id="ph" name="phone" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="em" style="color: aliceblue;">Email :</label>
+                    </td>
+                    <td>
+                        <input type="email" id="em" name="email" required placeholder="Ex.. any think@any think">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pass" style="color: aliceblue;">password :</label>
+                    </td>
+                    <td>
+                        <input type="password" required id="pass" name="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="re-pass" style="color: aliceblue;">re-password :</label>
+                    </td>
+                    <td>
+                        <input type="password" name="re-pass" id="re-pass" required>
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <p style="color: aliceblue;">Your gender :-</p>
+            <label for="gender1" style="color: aliceblue;">Male</label>
+            <input type="radio" name="gender" id="gender1" required value="Male">
+            <label for="gender2" style="color: aliceblue;">Female</label>
+            <input type="radio" name="gender" id="gender2" required value="Female">
+            <p style="color: aliceblue;">Your Degree :-</p>
+            <input type="checkbox" id="gr" name="Grade" value="Student">
+            <label for="gr" style="color: aliceblue;">Student</label>
+            <br>
+            <input type="checkbox" id="gr1" name="Grade" value="Graduated">
+            <label for="gr1" style="color: aliceblue;">Graduated</label>
+            <br><br>
+            <label for="car" style="color: aliceblue;">chose your car</label>
+            <select name="car" id="car" required>
+                <option value="bmw">bmw</option>
+                <option value="Mer">Mercedes</option>
+                <option value="Audi">Audi</option>
+                <option value="Po">porche</option>
+                <option value="opel">opel</option>
+                <option hidden selected>cars..</option>
+            </select>
+            <br><br>
+            <input type="image" src="./submet.jpg" alt="sent button" width="100" style="    position: absolute;
+                top: 95%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                border-radius: 40%;">
+    </form>
+</body>
+</html>

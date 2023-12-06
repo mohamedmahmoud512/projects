@@ -1,0 +1,537 @@
+@media screen and (max-width:589px) {
+    nav {
+        background-color: transparent;
+        position: absolute;
+        display: flex;
+        width: 100%;
+        z-index: 10;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    nav .ul {
+        display: none;
+    }
+
+    nav .logo {
+        width: max-content;
+        margin: 5% 0 0 5%;
+    }
+
+    nav .logo a {
+        font-size: 25px;
+        padding: 0;
+    }
+
+    nav i {
+        color: white;
+        opacity: 1;
+        font-size: 25px;
+        padding: 0;
+        margin: 5% 5% 0 0;
+
+    }
+
+    .section1 .contener .contant h1 {
+        font-size: 50px;
+    }
+
+    .section1 .contener .contant p {
+        margin-left: -125px;
+    }
+
+    .section2 {
+        flex-wrap: wrap;
+        height: 1285px;
+    }
+
+    .section2 .image {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        border: solid 0px rgba(0, 0, 0, 0.55);
+    }
+
+    .section2 .image img {
+        transform: translate(0%, 0%);
+    }
+
+    .section2 .image .over {
+        transform: translate(0%, 0%);
+    }
+
+    .section3 {
+        margin: 30% 0 0 0;
+    }
+
+    .section3 .content {
+        flex-wrap: wrap;
+    }
+
+    .section3 .content .card {
+        width: 100%;
+    }
+
+    .section4 {
+
+        margin: 30% 0 0 0;
+    }
+
+    .section4 .imges .imge {
+        width: 100%;
+        position: relative;
+    }
+
+    .section5 {
+
+        margin: 30% 0 0 0;
+    }
+
+    .section6 {
+
+        margin: 30% 0 0 0;
+    }
+
+    .section6 .head p {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .section6 .contant {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section6 .contant .imge {
+        border-radius: 50%;
+        overflow: hidden;
+        z-index: 1;
+        position: relative;
+        top: 10px;
+        padding: 10px;
+    }
+
+    .section6 .contant .imge img {
+        width: 80%;
+    }
+
+    .section6 .contant .label {
+        width: 100%;
+        margin-left: 20%;
+        margin-top: 10%;
+    }
+
+    .section6 .contant .color {
+        height: 60%;
+    }
+
+    .section7 {
+        height: 1700px;
+        margin: 30% 0 0 0;
+    }
+
+    .section7 .contener {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section7 .contener .child {
+        width: 100%;
+    }
+
+    .section7 .contener .child img {
+        width: 80%;
+        margin-left: 15%;
+        margin-top: 15%;
+    }
+
+    .login form {
+        width: 100%;
+        margin-left: 1%;
+    }
+
+    #text {
+        width: 100%;
+    }
+
+    #email {
+        width: 100%;
+    }
+
+    #subject {
+        width: 100%;
+    }
+
+    #textarea {
+        width: 100%;
+    }
+}
+
+/* second screen */
+@media screen and (min-width:590px) and (max-width:781px) {
+    nav {
+        background-color: transparent;
+        position: absolute;
+        display: flex;
+        width: 100%;
+        z-index: 10;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    nav .ul {
+        display: none;
+    }
+
+    nav .logo {
+        width: max-content;
+        margin: 5% 0 0 5%;
+    }
+
+    nav .logo a {
+        font-size: 25px;
+        padding: 0;
+    }
+
+    nav i {
+        color: white;
+        opacity: 1;
+        font-size: 25px;
+        padding: 0;
+        margin: 5% 5% 0 0;
+
+    }
+
+    .section1 .contener .contant p {
+        margin-left: -125px;
+    }
+
+    .section2 {
+        flex-wrap: wrap;
+        height: 1185px;
+    }
+
+    .section2 .image {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        border: solid 0px rgba(0, 0, 0, 0.55);
+    }
+
+    .section2 .image img {
+        transform: translate(0%, 0%);
+    }
+
+    .section2 .image .over {
+        transform: translate(0%, 0%);
+    }
+
+    .section2 .contant .bottom .ul {
+        padding: 0 20px 15px 0;
+    }
+
+    .section3 {
+        margin: 30% 0 0 0;
+    }
+
+    .section3 .content {
+        flex-wrap: wrap;
+    }
+
+    .section3 .content .card {
+        width: 100%;
+    }
+
+    .section4 {
+
+        margin: 30% 0 0 0;
+    }
+
+    .section4 .imges .imge {
+        width: 100%;
+        position: relative;
+    }
+
+    .section5 {
+
+        margin: 30% 0 0 0;
+    }
+
+    .section6 {
+
+        margin: 30% 0 0 0;
+    }
+
+    .section6 .head p {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .section6 .contant {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section6 .contant .imge {
+        border-radius: 50%;
+        overflow: hidden;
+        z-index: 1;
+        position: absolute;
+        top: 40px;
+        left: 10%;
+    }
+
+    .section6 .contant .imge img {
+        width: 100%;
+    }
+
+    .section6 .contant .label {
+        width: 100%;
+        margin-left: 20%;
+        margin-top: 10%;
+    }
+
+    .section6 .contant .color {
+        height: 60%;
+    }
+
+    .section7 {
+        height: 2300px;
+        margin: 25% 0 0 0;
+    }
+
+    .section7 .contener {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section7 .contener .child {
+        width: 100%;
+    }
+
+    .section7 .contener .child img {
+        width: 90%;
+        height: 337px;
+        margin-left: 5%;
+        margin-top: 15%;
+    }
+
+    .section7 .contener .child iframe {
+        margin-top: 15%;
+        width: 90%;
+        height: 337px;
+        margin-left: 5%;
+    }
+
+    .login form {
+        width: 100%;
+        margin-left: 1%;
+    }
+
+    #text {
+        width: 100%;
+    }
+
+    #email {
+        width: 100%;
+    }
+
+    #subject {
+        width: 100%;
+    }
+
+    #textarea {
+        width: 100%;
+    }
+}
+
+/* third screen */
+@media screen and (min-width:782px) and (max-width:1005px) {
+    nav .ul {
+        width: 80%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    nav .ul ul {
+        list-style: none;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    nav .ul ul li {
+        margin: 10px 4px;
+        display: inline-block;
+    }
+
+    .section1 .contener .contant p {
+        margin-left: -125px;
+    }
+
+    .section2 {
+        flex-wrap: nowrap;
+        height: 700px;
+    }
+
+    .section2 .image {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        margin-left: 7%;
+        border: solid 0px rgba(0, 0, 0, 0.55);
+    }
+
+    .section2 .image img {
+        transform: translate(0%, 0%);
+    }
+
+    .section2 .image .over {
+        transform: translate(0%, 0%);
+    }
+
+    .section2 .contant {
+        margin-left: 5%;
+    }
+
+    .section2 .contant .bottom .ul {
+        padding: 0 0px 5px 0;
+    }
+
+    .section2 .contant .bottom ul li {
+        font-size: 14px;
+    }
+
+    .section2 .contant .bottom ul li span {
+        font-size: 16px;
+    }
+
+    .section3 {
+        margin: 30% 0 0 0;
+    }
+
+    .section3 .content {
+        overflow: hidden;
+        width: 80%;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section3 .content .card {
+        width: 45%;
+
+    }
+
+    .section4 {
+
+        margin: 30% 0 0 0;
+    }
+
+    .section4 .imges .imge {
+        width: 45%;
+        position: relative;
+    }
+
+    .section5 {
+
+        margin: 25% 0 0 0;
+    }
+
+    .section6 {
+
+        margin: 30% 0 0 0;
+    }
+
+    .section6 .head p {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .section6 .contant {
+        width: 80%;
+        height: 100%;
+    }
+
+    .section6 .contant .imge {
+        border-radius: 50%;
+        overflow: hidden;
+        z-index: 1;
+        position: absolute;
+        top: 40px;
+        left: 80px;
+    }
+
+    .section6 .contant .imge img {
+        width: 100%;
+    }
+
+    .section6 .contant .label {
+        width: 100%;
+        margin-left: 20%;
+        margin-top: 10%;
+    }
+
+    .section6 .contant .color {
+        height: 60%;
+    }
+
+    .section7 {
+        height: 1000px;
+        margin: 25% 0 0 0;
+    }
+
+    .section7 .contener {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section7 .contener .child {
+        width: calc(100%/3);
+    }
+
+    .section7 .contener .child img {
+        width: 90%;
+        height: 337px;
+        margin-left: 5%;
+        margin-top: 15%;
+    }
+
+    .section7 .contener .child iframe {
+        margin-top: 15%;
+        width: 90%;
+        height: 337px;
+        margin-left: 5%;
+    }
+
+    .login form {
+        width: 100%;
+        margin-left: 1%;
+    }
+
+    #text {
+        width: 100%;
+    }
+
+    #email {
+        width: 100%;
+    }
+
+    #subject {
+        width: 100%;
+    }
+
+    #textarea {
+        width: 100%;
+    }
+}

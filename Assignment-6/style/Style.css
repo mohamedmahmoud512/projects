@@ -1,0 +1,204 @@
+:root{
+    --main-color:#09c;
+    --border-color:rgba(0, 153, 204, 0.317);
+    --section-color:rgba(0, 153, 204, 0.404)
+}
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-info {
+    background-color: var(--main-color) !important;
+}
+
+.border-info {
+    border-color: var(--main-color) !important;
+}
+
+.section-1 {
+    background-image: url(../img/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.section-1 .contener {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.section-1 .contener .about .size {
+    font-size: 70px;
+    top: 45%;
+}
+.section-1 .contener .about p {
+    width: 30%;
+    height: 50px;
+}
+.section-1 .contener .about .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-1 .contener .about .text span{
+    font-size: 50px;
+    color: aliceblue;
+
+}
+.section-2 .container .about-me::after {
+    content: "";
+    background-color: var(--main-color);
+    width: 140px;
+    height: 5px;
+    position:absolute;
+    bottom: -20%;
+    left: 0%;
+}
+
+.section-3 .head>p::after {
+    content: "";
+    background-color: var(--main-color);
+    width: 50px;
+    height: 8px;
+    position:absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container .icon{
+    width: 150px;
+    height: 150px;
+}
+.container .my-hover .icon-2{
+    width: 125px;
+    height: 125px;
+}
+.section-3{
+    height: auto !important;
+}
+.section-3 .margin {
+    margin: auto;
+}
+
+.my-border {
+    border-width: 15px !important;
+}
+
+.container .my-hover .icon , .container .my-hover .icon-2 {
+    transition: all 0.4s !important;
+}
+
+.container .my-hover:hover .icon {
+    border-color: var(--border-color) !important;
+}
+.container .my-hover:hover .icon-2 {
+    background-color: var(--main-color) !important;
+}
+.section-4 {
+    height: 300px;
+    background-image: url(../img/post-3.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.section-4 .contener{
+    background-color: rgba(0, 153, 204, 0.404) !important;
+    width: 100%;
+    height: 300px;
+}
+.section-4 .container-fluid .row .icon{
+    width: 100px;
+    height: 100px;
+    border: solid white 10px !important;
+}
+.portfolio .head p::after{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 5px;
+    background-color: var(--main-color);
+}
+.portfolio .container .card .imge img{
+    transition: all 0.5s;
+}
+.portfolio .container .card .imge:hover img{
+    transform: scale(1.5)
+}
+.about-2{
+    background-image: url(../img/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 5%;
+}
+.about-2 .contener{
+    background-color: var(--section-color);
+}
+.about-2 .contener .imge{
+    width: 150px !important;
+    height: 150px !important;
+    margin: auto;
+}
+.about-2 .contener .carousel-inner{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.about-2 .contener .carousel-indicators{
+    position: absolute;
+    bottom: 0%;
+    left: 35%;
+    
+    transform: translateX(-50%);
+}
+#carouselExampleCaptions .carousel-indicators button{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+}
+.blog .head>p::after {
+    content: "";
+    background-color: var(--main-color);
+    width: 50px;
+    height: 8px;
+    position:absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.blog .container .about{
+    width: 90%;
+    padding-top: 5%;
+    border-color: rgba(0, 0, 0, 0.491) !important;
+}
+.blog .container .about img{
+    width: 30px;
+    height: 30px;
+}
+.blog .container .col-md-4 .conten::after{
+    content: "WEB-DESIGN";
+    width: 70px;
+    height: 30px;
+    background-color: #0078FF;
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 25px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 5px; 
+}

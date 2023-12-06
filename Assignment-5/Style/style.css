@@ -1,0 +1,795 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --my-color: #ce1212;
+    --bg-color: rgb(0, 0, 0);
+    --bg-color2: rgba(0, 0, 0, 0.678);
+    --nav-bg: #ffff;
+    --nav-color: black;
+}
+
+.navbar {
+    display: none !important;
+}
+
+nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--nav-bg);
+    color: var(--nav-color);
+}
+
+nav>a {
+    text-decoration: none;
+    color: var(--nav-color);
+    font-size: 35px;
+    margin-left: 5%;
+}
+
+nav .ul li {
+    position: relative;
+}
+
+nav .ul li::after {
+    content: " ";
+    width: 0%;
+    height: 1px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--my-color);
+    transition: all 0.3s;
+}
+
+nav .ul li:hover::after {
+    width: 100%;
+}
+
+nav .ul li a {
+    font-size: 25px;
+    text-decoration: none;
+    color: var(--nav-color);
+}
+
+nav button {
+    font-size: 30px;
+    margin-right: 5%;
+    background-color: transparent;
+    border: none;
+    color: var(--nav-color);
+    cursor: pointer;
+}
+
+nav>a::after {
+    content: ".";
+    color: var(--my-color);
+    font-size: 30px;
+}
+
+nav .ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .ul li {
+    margin: 7%;
+    font-size: 18px;
+}
+
+::selection {
+    background: var(--my-color);
+    color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section-1 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-1 .contant {
+    width: 40%;
+    margin-left: 10%;
+}
+
+.section-1 .contant h2 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+
+.section-1 .contant p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.section-1 .contant .btn {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 5%;
+}
+
+.section-1 .contant .btn a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.section-1 .img {
+    width: 40%;
+    margin-right: 2%;
+    margin-top: 7%;
+}
+
+.section-1 .img:hover img {
+    animation-name: img;
+    animation-duration: 1s;
+    animation-timing-function: inherit;
+    animation-iteration-count: infinite;
+}
+
+@keyframes img {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+img {
+    width: 80%;
+}
+
+.contant .btn .one {
+    background-color: var(--my-color);
+    color: white;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+}
+
+.contant .btn .two {
+    color: black;
+    padding: 10px;
+    width: 175px;
+    position: relative;
+    background-color: white;
+    border-radius: 40px;
+    transition: color 0.4s;
+}
+
+.contant .btn .two :hover {
+    color: var(--my-color);
+}
+
+.contant .btn .two ::after {
+    content: " ";
+    position: absolute;
+    width: 4.4375rem;
+    height: 4.4375rem;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, var(--my-color) 0 50%, transparent 50% 100%);
+    border-radius: 50%;
+    z-index: -1;
+    top: -32%;
+    left: -8%;
+}
+
+.section-2 {
+    width: 100%;
+    height: max-content
+}
+
+.section-2 .head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.section-2 .head p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.section-2 .head h2 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+
+.section-2 .head span {
+    color: var(--my-color);
+}
+
+.section-2 .contener {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin-left: 6%;
+}
+
+.section-2 .contener .card {
+    width: 30%;
+    margin-right: 2%;
+    transition: all 0.4s;
+    background-color: var(--nav-bg);
+}
+
+.section-2 .contener .card .picture {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-2 .contener .card .picture .info {
+    width: 50px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: space-evenly;
+    position: absolute;
+    /* top: 40px;
+    right: 15px; */
+    top: 40px;
+    right: -100px;
+    background-color: rgba(240, 248, 255, 0.452);
+    border-radius: 10px;
+    transition: all 0.4s 0.5s;
+}
+
+.section-2 .contener .card .picture .info i {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.377);
+    transition: 0.3s;
+}
+
+.section-2 .contener .card .picture .info i:hover {
+    color: black;
+}
+
+.section-2 .contener .card .picture img {
+    border-radius: 20px;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.section-2 .contener .card:hover {
+    transform: scale(1.1);
+}
+
+.section-2 .contener .card:hover .picture .info {
+    top: 40px;
+    right: 15px;
+}
+
+.section-2 .contener .card .picture::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background-image: url(https://routeegy.github.io/Mealify/assets/img/team-shape.svg);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 3.75rem;
+}
+
+.section-2 .contener .card h4 {
+    font-size: 19px;
+    text-align: center;
+    width: 100%;
+}
+
+.section-2 .contener .card p {
+    text-align: center;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.562);
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.section-3 {
+    margin-top: 10%;
+    width: 100%;
+    height: 1100px;
+}
+
+.section-3 .head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.section-3 .head p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.section-3 .head h2 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+
+.section-3 .head span {
+    color: var(--my-color);
+}
+
+.section-3 .gallery {
+    margin: 20px auto;
+    columns: 3;
+    width: 80%;
+}
+
+.section-3 .gallery .pic {
+    width: 100%;
+    margin-bottom: 10%;
+    margin-right: 10px;
+    break-inside: avoid;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-3 .gallery .pic img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.section-3 .gallery .pic .info {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    background-color: var(--bg-color2);
+    color: white;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    top: 100%;
+    transition: 0.4s;
+}
+
+.section-3 .gallery .pic .info p {
+    font-size: 16px;
+}
+
+.section-3 .gallery .pic .info p span {
+    margin: 10px 0px;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.section-3 .gallery .pic:hover .info {
+    top: 0;
+}
+
+.section-4 {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 1500px;
+}
+
+.section-4 .head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.section-4 .head p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.section-4 .head h2 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+
+.section-4 .head span {
+    color: var(--my-color);
+}
+
+.section-4 iframe {
+    width: 100%;
+    height: 21.875rem;
+}
+
+.section-4 .contant {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 2% 0%;
+    width: 100%;
+    height: max-content;
+}
+
+.section-4 .contant .ul {
+    width: 40%;
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+}
+
+.section-4 .contant .ul .icon {
+    background-color: var(--my-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.section-4 .contant .ul .icon i {
+    color: white;
+    font-size: 20px;
+}
+
+.section-4 .contant .adress {
+    margin-right: 20%;
+}
+
+.section-4 .contant .call {
+    margin-right: 20%;
+}
+
+.section-4 .contant .data h3 {
+    color: var(--bg-color2);
+    font-size: 25px;
+}
+
+.section-4 .contant .data span {
+    color: black;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.section-4 form {
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: flex-start;
+}
+
+.section-4 form #text {
+    width: 49%;
+    padding: 20px;
+    outline: none;
+    margin-right: 1%;
+    border: 0px;
+}
+
+.section-4 form #email {
+    width: 49%;
+    padding: 20px;
+    outline: none;
+    border: none;
+}
+
+.section-4 form #sub {
+    width: 100%;
+    padding: 20px;
+    outline: none;
+    margin-top: 4%;
+    border: 0px;
+}
+
+.section-4 form #message {
+    width: 100%;
+    padding: 8px 16px;
+    outline: none;
+    margin-top: 4%;
+    border: none;
+}
+
+.section-4 form #submet {
+    background-color: var(--my-color);
+    cursor: pointer;
+    border: var(--my-color) solid 1px;
+    padding: 20px;
+    color: #ffff;
+    font-size: 18px;
+    letter-spacing: 3px;
+    border-radius: 30px;
+    margin-top: 10%;
+}
+
+.section-4 form #text:focus,
+.section-4 form #email:focus,
+.section-4 form #sub:focus,
+.section-4 form #message:focus {
+    /* border: #ce1212 solid 1px; */
+    outline: 2px solid;
+    outline-color: var(--my-color);
+}
+
+footer {
+    background-image: url(../imges/textured-metal-background.jpg);
+    background-size: cover;
+    width: 100%;
+    height: max-content;
+    margin-top: 10%;
+}
+
+footer .contener {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    color: #ffff;
+    background-color: rgba(0, 0, 0, 0.418);
+}
+
+footer .contener .about {
+    width: 20%;
+    margin-top: 2%;
+}
+
+footer .contener .about .head {
+    width: 100%;
+    display: flex;
+    color: #ffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer .contener .about .head img {
+    width: 50px;
+}
+
+footer .contener .about .head h2 {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 30px;
+    font-family: 'Cairo', sans-serif;
+}
+
+footer .contener .about .head h2::after {
+    content: ".";
+    color: var(--my-color);
+    font-size: 30px;
+}
+
+footer .contener .about h3 {
+    margin-top: 20px;
+    font-size: 25px;
+    padding-bottom: 5%;
+    text-align: center;
+    border-bottom: #fff solid 1px;
+
+}
+
+footer .contener .about p {
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: left;
+
+}
+
+footer .contener .about .social {
+    display: flex;
+    justify-content: center;
+}
+
+footer .contener .about .social ul {
+    list-style-type: none;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-left: 10%;
+}
+
+footer .contener .about .social ul li {
+    display: inline-block;
+    width: 60px;
+    font-size: 30px;
+}
+
+footer .contener .about .social ul li i {
+    cursor: pointer;
+}
+
+footer .contener .subscripe {
+    width: 40%;
+    margin-top: 2%;
+}
+
+footer .contener .subscripe form {
+    width: 100%;
+}
+
+footer .contener .subscripe form input {
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    width: 75%;
+}
+
+footer .contener .subscripe form button {
+    background-color: var(--my-color);
+    padding: 2%;
+    border: none;
+    color: #fff;
+    width: 24%;
+    cursor: pointer;
+}
+
+footer .contener .subscripe .links {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: baseline;
+}
+
+footer .contener .subscripe .links h3 {
+    display: block;
+}
+
+footer .contener .subscripe .links ul {
+    list-style-type: none;
+}
+
+footer .contener .subscripe .links ul li {
+    margin-bottom: 5px;
+    transition: all 0.4s;
+    width: 100%;
+    padding: 5px;
+}
+
+footer .contener .subscripe .links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+footer .contener .subscripe .links ul li a::before {
+    content: "> ";
+    margin-right: 5px;
+}
+
+footer .contener .subscripe .links ul li:hover {
+    background-color: #a5a5a55d;
+    transform: translateX(4%);
+}
+
+footer .contener .subscripe .links .onu {
+    width: 45%;
+    margin-right: 5%;
+}
+
+footer .contener .subscripe .links .tuo {
+    width: 45%;
+    margin-right: 5%;
+}
+
+footer .contener .contact {
+    width: 25%;
+    margin-top: 2%;
+}
+
+footer .contener .contact ul {
+    list-style-type: none;
+}
+
+footer .contener .contact ul li {
+    margin-top: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+footer .contener .contact ul li i {
+    color: var(--my-color);
+    margin-right: 5px;
+    font-size: 25px;
+}
