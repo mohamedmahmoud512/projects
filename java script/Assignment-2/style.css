@@ -1,0 +1,32 @@
+div {
+    text-align: center;
+    width: 100%;
+    height: max-content;
+}
+
+div>h1 {
+    width: 100%;
+    font-family: 'Anton', sans-serif;
+    font-size: 60px;
+}
+div h4 {
+    margin-top: 5%;
+    font-size: 30px;
+}
+div button{
+    width: 250px;
+    height: 80px;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: green;
+}
+div p{
+    width: 100%;
+    font-family: 'Hedvig Letters Serif', serif;
+    font-weight: bold;
+    font-size: 30px;
+}
